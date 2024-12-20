@@ -1,3 +1,4 @@
 
 <app-search-box (searchTextChanged) = "setSearchText($event)"></app-search-box>
-<app-product-list [searchText] = "searchText"></app-product-list>
+<app-product-list [searchText] = "searchText" #productListComponent></app-product-list>
+<app-product-detail *ngIf="productListComponent.selectedProduct"></app-product-detail>
