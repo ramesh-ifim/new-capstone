@@ -11,6 +11,7 @@ import { SearchBoxComponent } from './components/container/search-box/search-box
 import { HeaderComponent } from './components/header/header.component';
 import {FormsModule} from '@angular/forms';
 import { ProductDetailComponent } from './components/container/product-detail/product-detail.component';
+import { ProductBrandsComponent } from './components/container/product-brands/product-brands.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ProductDetailComponent } from './components/container/product-detail/pr
     ProductComponent,
     SearchBoxComponent,
     HeaderComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    ProductBrandsComponent
   ],
   imports: [
     BrowserModule,

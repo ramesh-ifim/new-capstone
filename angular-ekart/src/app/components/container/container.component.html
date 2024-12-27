@@ -1,4 +1,27 @@
 
 <app-search-box (searchTextChanged) = "setSearchText($event)"></app-search-box>
 <app-product-list [searchText] = "searchText" #productListComponent></app-product-list>
-<app-product-detail *ngIf="productListComponent.selectedProduct"></app-product-detail>
+<app-product-detail *ngIf="productListComponent.selectedProduct" [productListComp]="productListComponent"></app-product-detail>
+
+<div class ="ekart-featured-products">
+    <div class="ekart-featured-product-heading">
+        <h3>Latest arrival in popular brands</h3>        
+    </div>
+      <app-product-brands>
+        <h6 class="title">New Arrivals in Adidas</h6>
+        <button class="call-to-action">Show new arrivals in Adidas</button>
+      </app-product-brands>
+      <app-product-brands>
+        <h6 class="title">New Arrivals in Nike</h6>
+        <button class="call-to-action">Show new arrivals in Nike</button>
+      </app-product-brands>
+      <app-product-brands>
+        <h6 class="title">New Arrivals in Reebook</h6>
+        <button class="call-to-action">Show new arrivals in Rebook</button>
+      </app-product-brands>
+      <app-product-brands>
+        <h6 class="title">New Arrivals in Adidas</h6>
+        <button class="call-to-action">Show new arrivals in Adidas</button>
+      </app-product-brands> 
+     
+</div>

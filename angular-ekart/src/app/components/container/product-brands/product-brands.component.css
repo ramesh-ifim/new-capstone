@@ -1,0 +1,21 @@
+.ekart-featured-product-item{
+    width:270px;
+    margin:10px 0px;
+    margin-left:0px;
+    margin-right:10px;
+    padding:20px 30px;
+    background-color: #fff; 
+     
+
+}
+.titiel, .description, .call-to-action{
+     margin:10px 0px;
+
+}
+.call-to-action{
+    background-color: #28282B;
+    color: #fff;
+    width:100%;
+    padding:10px 0px;
+
+}
