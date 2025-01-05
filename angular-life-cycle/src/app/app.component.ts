@@ -8,9 +8,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-life-cycle';
+  inputVal : string ='';
 
   constructor(){
 
     console.log("App component constructor called ...!!!");
+  }
+
+  onBtnClick(inputEL: HTMLInputElement){
+
+    this.inputVal=inputEL.value;
   }
 }
