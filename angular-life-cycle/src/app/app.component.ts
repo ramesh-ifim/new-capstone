@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-life-cycle';
-  inputVal : string ='';
+  inputVal : string[] = ['Hello','Hi there' ];
 
   constructor(){
 
@@ -17,6 +17,6 @@ export class AppComponent {
 
   onBtnClick(inputEL: HTMLInputElement){
 
-    this.inputVal=inputEL.value;
+    this.inputVal.push(inputEL.value);
   }
 }
